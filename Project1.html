@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="to-do_list.css">
+    <script src="to-do_list.js"></script>
+</head>
+<body>
+    <!-- Title and form starts here -->
+    <header class="form">
+        <h1 class="title">To Do List</h1>
+          <div class="uin">Enter the Title of task : <input type="text" id="tasktitle"></div>  
+          <div class="uin">Enter Task description : <input type="text" id="taskdescription"></div> 
+          <button class="btn" id="add" onclick="clickedadd()">Add to list</button>
+          <button class="btn" onclick="clickeddel()">Clear List</button>
+
+    </header>
+    <!-- Title and form ends here -->
+
+    <!-- tabular section starts here -->
+    <section>
+        <h2>The List</h2>
+        <table style="width:50%" class="tdata">
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Task Title</th>
+                    <th>Task description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="tablebody">
+                <tr>
+                    <td>1.</td>
+                    <td>Market shopping</td>
+                    <td>Shopping of clothes, grocery and other items</td>
+                    <td><button class="btn2">Delete it</button></td> 
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-- tabular section ends here -->
+
+</body>
+</html>
